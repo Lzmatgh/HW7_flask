@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--<html>-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Hello</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--&lt;!&ndash;<style type="text/css">&ndash;&gt;-->
+<!--&lt;!&ndash;    li {list-style: none;}&ndash;&gt;-->
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--    <h1>-->
+<!--        Hello {{name}}!-->
+<!--    </h1>-->
+<!--    <p>-->
+<!--        Today's technology headlines are...-->
+<!--    </p>-->
+<!--    <ol>-->
+<!--        {% for title in titles %}-->
+<!--            <li><a href={{urls[loop.index0]}}>{{title}}</a><img src={{thumbnails[loop.index0]}}></li>-->
+<!--        {% endfor %}-->
+
+<!--    </ol>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Hello</title>-->
+<!--</head>-->
+
+<!--<style>-->
+<!--table, th, td {-->
+<!--  border:1px solid black;-->
+<!--}-->
+<!--</style>-->
+
+<!--<body>-->
+
+<!--&lt;!&ndash;<style type="text/css">&ndash;&gt;-->
+<!--&lt;!&ndash;    li {list-style: none;}&ndash;&gt;-->
+<!--&lt;!&ndash;</style>&ndash;&gt;-->
+<!--    <h1>-->
+<!--        Hello {{name}}!-->
+<!--    </h1>-->
+<!--    <p>-->
+<!--        Today's technology headlines are...-->
+<!--    </p>-->
+<!--    <ol>-->
+<!--        {% for title in titles %}-->
+<!--            <li><a href={{urls[loop.index0]}}>{{title}}</a><img src={{thumbnails[loop.index0]}}></li>-->
+<!--        {% endfor %}-->
+
+<!--    </ol>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h1>Hello {{name}}!</h1>
+<p>Today's technology headlines are...</p>
+
+<table style="width:45%">
+  <tr>
+    <th>Title</th>
+    <th>Thumbnail</th>
+  </tr>
+
+  {% for title in titles %}
+            <tr>
+              <td><a href={{urls[loop.index0]}}>{{title}}</a></td>
+              <td><img src={{thumbnails[loop.index0]}} style="height: 200px;"></td>
+            </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
